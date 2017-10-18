@@ -1,0 +1,100 @@
+{
+  "name": "my-wines-and-beers",
+  "version": "1.0.0",
+  "description": "An application to search and manage wines and beers",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lite-server ./www"
+  },
+  "author": "Filipe Vieira",
+  "license": "MIT",
+  "devDependencies": {
+    "angular": "^1.6.6",
+    "angular-ui-router": "^0.4.3",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
+    "event-stream": "^3.3.4",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csslint": "^1.0.0",
+    "gulp-htmlhint": "^0.3.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-jscs": "^4.0.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-uglify": "^3.0.0",
+    "jshint": "^2.9.5",
+    "lite-server": "^2.3.0",
+    "typicons.font": "^2.0.9",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "jshintConfig": {
+    "esversion": 6,
+    "predef": [
+      "require"
+    ],
+    "bitwise": true,
+    "camelcase": true,
+    "curly": true,
+    "eqeqeq": true,
+    "forin": true,
+    "freeze": true,
+    "immed": true,
+    "latedef": true,
+    "newcap": true,
+    "noempty": true,
+    "nonbsp": true,
+    "nonew": true,
+    "quotmark": true,
+    "singleGroups": true,
+    "nocomma": false,
+    "maxlen": 80,
+    "maxdepth": 6,
+    "undef": true,
+    "unused": true,
+    "strict": true,
+    "browser": true,
+    "browserify": true
+  },
+  "jscsConfig": {
+    "disallowDanglingUnderscores": true,
+    "disallowMixedSpacesAndTabs": true,
+    "disallowMultipleLineBreaks": true,
+    "disallowMultipleLineStrings": true,
+    "disallowMultipleVarDecl": true,
+    "disallowSpaceAfterObjectKeys": true,
+    "disallowSpacesInCallExpression": true,
+    "disallowTrailingComma": true,
+    "disallowTrailingWhitespace": true,
+    "disallowYodaConditions": true,
+    "disallowSpacesInsideParentheses": true,
+    "maximumLineLength": 80,
+    "requireCamelCaseOrUpperCaseIdentifiers": true,
+    "requireKeywordsOnNewLine": [
+      "else"
+    ],
+    "requireLineBreakAfterVariableAssignment": true,
+    "requireLineFeedAtFileEnd": true,
+    "requireSpaceAfterKeywords": true,
+    "requireSpaceBeforeBlockStatements": true,
+    "requireSpaceBeforeObjectValues": true,
+    "requireSpaceBetweenArguments": true,
+    "requireSpacesInForStatement": true,
+    "requireSpacesInFunctionDeclaration": {
+      "beforeOpeningRoundBrace": true,
+      "beforeOpeningCurlyBrace": true
+    },
+    "validateIndentation": "\t",
+    "validateLineBreaks": "LF",
+    "validateParameterSeparator": ", ",
+    "validateQuoteMarks": "'"
+  },
+  "cssConfig": {
+    "box-model": true,
+    "box-sizing": false
+  },
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.10"
+  }
+}
