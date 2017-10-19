@@ -44,7 +44,7 @@ Currently the Services only handles localstorage data and it is not connected to
 	* brewerydb.com/developers/docs
 		* I had to register an application that at the current time I dind't had.
 	
-Because I don't want to extend the deliver time and registering process on this services seems slow, I choose to deliver that application with a dummy service, however the architecture will allow to easily add other data sources.
+Because I don't want to extend the deliver time and registering process on this services seems slow, I choose to release the  application with a dummy service, however the architecture will allow to easily add other data sources.
 
 
 
