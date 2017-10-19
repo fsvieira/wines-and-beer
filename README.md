@@ -35,7 +35,15 @@
 # Architecture
 Its a simple MVVC architecture using views to display data, controllers to get and prepare data for views and data service for a better data layer abstraction from external or internal data services.
 
-Currently the Services only handles localstorage data and it is not connected to any wine service only a json test file (https://github.com/fsvieira/wines-and-beer/blob/master/src/resources/wines.json), this is because I didn't have time to complete the api connection and I had some problems registering on the wine websites, however the architecture will allow to easily add other data sources.
+Currently the Services only handles localstorage data and it is not connected to any wine service only a json test file (https://github.com/fsvieira/wines-and-beer/blob/master/src/resources/wines.json), this is because I had some trouble to register on the wine webservices:
+	* api.wine.com
+		* The register page was returning a 404 error,
+	* api.snooth.com
+		* After register it appears a page saying that I would be contacted, but that never happened,
+	* brewerydb.com/developers/docs
+		* I had to register an application that at the current time I dind't had.
+	
+Because I don't want to extend the deliver time and registering process on this services seems slow, I choose to deliver that application with a dummy service, however the architecture will allow to easily add other data sources.
 
 
 
