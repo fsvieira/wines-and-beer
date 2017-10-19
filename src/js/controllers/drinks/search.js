@@ -28,7 +28,9 @@ function (
 	
 	function filterDrinks (drinks, filter, value) {
 		if (value !== '') {
-			return drinks.filter(drink => drink[filter] == value);
+			return drinks.filter(
+				drink => ('' + drink[filter]).localeCompare(''+ value) === 0
+			);
 		}
 		
 		return drinks;

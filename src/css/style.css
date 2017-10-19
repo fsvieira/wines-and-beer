@@ -152,11 +152,7 @@ body {
 	max-width: 40em;
 	margin-left: auto;
 	margin-right: auto;
-	-webkit-transition: height 1s; 
-	-moz-transition: height 1s; 
-	-ms-transition: height 1s; 
-	-o-transition: height 1s; 
-	transition: height 1s;  
+	min-height: 0;
 }
 
 .list .list-item {
