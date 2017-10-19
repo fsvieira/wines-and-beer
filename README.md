@@ -36,6 +36,7 @@
 Its a simple MVVC architecture using views to display data, controllers to get and prepare data for views and data service for a better data layer abstraction from external or internal data services.
 
 Currently the Services only handles localstorage data and it is not connected to any wine service only a json test file (https://github.com/fsvieira/wines-and-beer/blob/master/src/resources/wines.json), this is because I had some trouble to register on the wine webservices:
+
 	* api.wine.com
 		* The register page was returning a 404 error,
 	* api.snooth.com
