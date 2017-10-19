@@ -1,0 +1,174 @@
+body {
+	background-color: #D7B5AB;
+	color: #56291C;
+}
+
+
+.error,
+.success {
+    padding: 0.5em;
+    background-color: #4CAF50; /* Red */
+    color: white;
+    margin: 0.5em;
+}
+
+.error {
+    background-color: #f44336; /* Red */
+}
+
+
+.header {
+	font-size: 2em;
+	width: 100%;
+	border-bottom: 2px solid #56291C;
+	color: #D7B5AB;
+	text-align: center;
+	padding: 0.5em;
+	font-family: 'Patrick Hand', cursive;
+	background-color: #896256;
+	box-sizing: border-box;
+	display: block;
+}
+
+.clear {
+	clear: both;
+}
+
+.header .title {
+	float: left;
+}
+
+.header .actions {
+	float: right;
+}
+
+.header .actions a:visited,
+.header .actions a {
+	float: left;
+	text-decoration: none;
+	font-size: 0.8em;
+	margin: 0.5em;
+	border-bottom: 2px solid #896256;
+	box-sizing: border-box;
+	color: #D7B5AB;
+}
+
+.header .actions a:hover {
+	border-bottom: 2px solid #56291C;
+	box-sizing: border-box;
+}
+
+.sub-title {
+	text-align: center;
+	margin: 1em;
+	text-transform: upppercase;
+	font-size: 1.5em;
+}
+
+.form {
+	width: 100%;
+	max-width: 32em;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+.form select,
+.form .button,
+.form input {
+	clear: both;
+	width: 100%;
+	height: 2em;
+	padding: 0.25em;
+	margin: 0.5em;
+	color: #56291C;
+	box-sizing: border-box;
+}
+
+.form .button {
+	border-radius: 0.5em;
+	border: 2px solid #56291C;
+	background-color: #896256;
+	font-size: 1em;
+	padding: 0.5em;
+	text-align: center;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	color: #D7B5AB;
+}
+
+/* Documentation */
+.page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+  width: 98%;
+  max-width: 52em;
+  padding-right: 1em;
+  padding-left: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  box-sizing: border-box;
+}
+
+.page .section {
+    margin-bottom: 1em;
+}
+
+.page .section .note {
+	color: #616E14;
+    border: solid 1px #BFD62F;
+    background-color: #DAE691;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    padding: 0.7em;
+    margin: 0.5em;
+}
+
+.page .section .title {
+  font-size: 1.5em;
+  border-bottom: 2px solid #56291C;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.2em;
+  width: 100%;
+  color: #56291C;
+}
+
+.page .section .content {
+  padding-left: 1em;
+}
+
+.page .section .content .paragraph {
+	margin-top: 0.7em;
+	margin-bottom: 0.7em;
+}
+
+.list {
+	width: 100%;
+	max-width: 40em;
+	margin-left: auto;
+	margin-right: auto;
+	-webkit-transition: height 1s; 
+	-moz-transition: height 1s; 
+	-ms-transition: height 1s; 
+	-o-transition: height 1s; 
+	transition: height 1s;  
+}
+
+.list .list-item {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	border: 2px solid #56291C;
+	background-color: ligth-gray;
+}
+
+.filter {
+	float:left;
+}
+
+
+

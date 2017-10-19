@@ -61,6 +61,7 @@ gulp.task('resources-css', function () {
 
 gulp.task('minify-css', ['resources-css'], function() {
   return gulp.src([
+		'src/css/reset.css',
 		'src/css/**/*.css',
 		'node_modules/typicons.font/src/font/typicons.css'
 	])

@@ -1,1 +1,25 @@
-<h1>Add</h1>
+<div class='sub-title'>Add My Drinks</div>
+
+<div class='form' ng-if='drink.form'>
+	<div class='error' ng-if='drink.errors.length'>
+		<div ng-repeat="error in drink.errors">
+			{{error}}
+		</div>
+	</div>
+
+	<div class='success' ng-if='drink.message'>
+		{{drink.message}}
+	</div>
+
+
+	<select ng-model='drink.form.type'>
+		<option value='wine'>Wine</option>
+		<option value='beer'>Beer</option>
+	</select>
+	<input ng-model='drink.form.name' placeholder='Name' />
+	<input ng-model='drink.form.year' placeholder='Year' />
+	<input ng-model='drink.form.vineyard' placeholder='Vineyard' />
+
+	<div class='button' ng-click='add()'>Add</div>
+
+</div>

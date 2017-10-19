@@ -32,7 +32,8 @@
   "jshintConfig": {
     "esversion": 6,
     "predef": [
-      "require"
+      "require",
+      "console"
     ],
     "bitwise": true,
     "camelcase": true,

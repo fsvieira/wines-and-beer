@@ -12,21 +12,23 @@ function (
 	'use strict';
 
 	$stateProvider
-		.state('drinks', {
-			url: '/drinks',
-			templateUrl: 'templates/drinks/drinks.html'
+		.state('drinks-search', {
+			url: '/drinks/search',
+			templateUrl: 'templates/drinks/search.html',
+			controller: 'DrinksSearchCtrl'
 		})
-		.state('drinks.search', {
-			url: '/search',
-			templateUrl: 'templates/drinks/search.html'
-		})
-		.state('drinks.add', {
+		.state('drinks-add', {
 			url: '/add',
-			templateUrl: 'templates/drinks/add.html'
+			templateUrl: 'templates/drinks/add.html',
+			controller: 'DrinksAddCtrl'
 		})
-		.state('drinks.details', {
+		.state('drinks-details', {
 			url: '/details/:id',
 			templateUrl: 'templates/drinks/details.html'
+		})
+		.state('about', {
+			url: '/about',
+			templateUrl: 'templates/about.html'
 		});
 		
 	// if none of the above states are matched, use this as the fallback

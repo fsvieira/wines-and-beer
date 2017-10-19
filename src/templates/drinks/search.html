@@ -1,1 +1,53 @@
-<h1>Search</h1>
+<div class='sub-title'>Search Wines &amp; Beers</div>
+
+<div class='form' ng-if='search.form'>
+	<input ng-model='search.form.query' placeholder='Search' />
+	<div class='button' ng-click='doSearch()'>Search</div>
+
+</div>
+
+<div class='list' ng-if='search.results'>
+	<div ng-if='search.results.drinks.length === 0' >
+		There is no results, try changing the query.
+	</div>
+	<div class='page'>
+		<div class='section'>
+			<div class='title'>Filters</div>
+			<div class='content'>
+				<div class='filter' ng-repeat='(filterName, values) in search.results.filters'>
+					<select ng-model='search.filters[filterName]' ng-change='filter()'>
+						<option value=''>- {{filterName}} -</option>
+						<option value='{{value}}' ng-repeat='value in values'>{{value}}</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		
+		<div class='clear'></div>
+		<div class='section' ng-if='search.results.drinks.length > 1'>
+			<div class='title'>Sort</div>
+			<div class='content'>
+				<select ng-model='search.sort' ng-change='sort()'>
+					<option value='{{value}}' ng-repeat='value in search.results.sort' >{{value}}</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	
+
+	
+	<div class='page' ng-repeat='drink in search.results.drinks'>
+		<div class='section'>
+			<div class='title'>
+				{{drink.name}} ({{drink.type}})
+			</div>
+			<div class='content'>
+				<p>Year: {{drink.year}}</p>
+				<p>Vineyard: {{drink.vineyard}}</p>
+				<p>Service: {{drink.service}}</p>
+			</div>
+		</div>
+	</div>
+</div>
+	
+</div>

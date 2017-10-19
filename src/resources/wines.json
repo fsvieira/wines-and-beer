@@ -1,16 +1,50 @@
-{
-	"wines": [
-		{
-			"name": "Cartuxa",
-			"year": 2009,
-			"vineyards": "Cartuxa Évora",
-			"image": ""
-		},
-		{
-			"name": "Pêra-Manca",
-			"year": 2009,
-			"vineyards": "Cartuxa Évora",
-			"image": ""
-		}
-	]
-}
+[
+	{
+		"name": "Cartuxa",
+		"year": 2009,
+		"vineyard": "Cartuxa Évora",
+		"image": "",
+		"service": "test-json",
+		"type": "wine"
+	},
+	{
+		"name": "Pêra-Manca",
+		"year": 2010,
+		"vineyard": "Cartuxa Évora",
+		"image": "",
+		"service": "test-json",
+		"type": "wine"
+	},
+	{
+		"name": "Monsaraz",
+		"year": 2016,
+		"vineyard": "Monsaraz Évora",
+		"image": "",
+		"service": "test-json",
+		"type": "wine"
+	},
+	{
+		"name": "Monsaraz Reserva",
+		"year": 2002,
+		"vineyard": "Monsaraz Évora",
+		"image": "",
+		"service": "test-json",
+		"type": "wine"
+	},
+	{
+		"name": "Super Bock",
+		"year": 2006,
+		"vineyard": "Portugal",
+		"image": "",
+		"service": "test-json",
+		"type": "beer"
+	},
+	{
+		"name": "Sagres",
+		"year": 2017,
+		"vineyard": "Portugal",
+		"image": "",
+		"service": "test-json",
+		"type": "beer"
+	}
+]
